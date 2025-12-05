@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    #main-nav {
+        @apply flex justify-end;
+    }
+
+    .navbar-nav {
+        @apply flex flex-col lg:flex-row gap-4;
+    }
+
+    .navbar-nav .menu-item {
+        @apply text-center lg:text-start;
+    }
+
+    .navbar-nav .menu-item a {
+        @apply text-xl lg:text-base font-medium hover:underline text-white;
+    }
+
+    .navbar-nav .menu-item.current-menu-item a {
+        @apply underline;
+    }
+}
