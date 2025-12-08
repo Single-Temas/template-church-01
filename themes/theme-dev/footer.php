@@ -16,22 +16,26 @@
 
 </div><!-- #page -->
 
+<!-- contact -->
+<?php echo get_template_part('template-parts/components/content', 'form'); ?>
+<!-- end contact -->
+
 <!-- footer -->
 <footer class="bg-black/80 py-8">
 
     <div class="container grid grid-cols-1 lg:grid-cols-3 gap-y-20 gap-x-4">
 
-        <div>
-            <h3 class="text-xl font-black text-white">
-                Sobre
-            </h3>
+        <?php if (get_field('sobre', 'option')): ?>
+            <div>
+                <h3 class="text-xl font-black text-white">
+                    Sobre
+                </h3>
 
-            <p class="text-xs font-medium text-white/80 mt-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nam reiciendis voluptatibus natus in.
-                Excepturi dolorum enim aliquam deleniti deserunt? Libero eius dolor corrupti tempore sunt, eaque cum
-                saepe repellendus!
-            </p>
-        </div>
+                <p class="text-xs font-medium text-white/80 mt-4">
+                    <?php echo get_field('sobre', 'option'); ?>
+                </p>
+            </div>
+        <?php endif; ?>
 
         <div class="flex lg:justify-center">
             <div>

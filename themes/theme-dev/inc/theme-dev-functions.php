@@ -140,6 +140,16 @@ function get_icon_setting(string $classes = ''): array
     ];
 }
 
+function get_calendar_item_setting(string $dateStart, string $dateEnd, string $title, string $description = ''): array
+{
+    return [
+        'date_start' => $dateStart,
+        'date_end' => $dateEnd,
+        'title' => $title,
+        'description' => $description
+    ];
+}
+
 function query_per_title($where, $wp_query)
 {
     global $wpdb;

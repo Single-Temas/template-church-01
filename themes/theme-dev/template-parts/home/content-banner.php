@@ -1,7 +1,7 @@
 <?php if (isset(get_field('banners')[0])): ?>
     <section class="relative">
 
-        <div class="swiper js-swiper">
+        <div class="swiper js-swiper-banner">
 
             <div class="swiper-wrapper">
 
@@ -25,12 +25,12 @@
                 <!-- end slide -->
             </div>
 
-            <div class="swiper-pagination js-swiper-pagination"></div>
+            <div class="swiper-pagination js-swiper-pagination-banner"></div>
         </div>
 
         <!-- navigations -->
-        <div class="swiper-button-prev swiper-button-pattern swiper-button-prev-pattern js-swiper-button-prev"></div>
-        <div class="swiper-button-next swiper-button-pattern swiper-button-next-pattern js-swiper-button-next"></div>
+        <div class="swiper-button-prev swiper-button-pattern swiper-button-prev-pattern js-swiper-button-prev-banner"></div>
+        <div class="swiper-button-next swiper-button-pattern swiper-button-next-pattern js-swiper-button-next-banner"></div>
         <!-- end navigations -->
     </section>
 <?php endif; ?>

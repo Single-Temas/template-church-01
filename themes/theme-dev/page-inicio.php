@@ -24,9 +24,22 @@ get_header();
 			<!-- banner -->
 			<?php echo get_template_part('template-parts/home/content', 'banner'); ?>
 			<!-- end banner -->
-			<h1 class="text-5xl font-black text-center py-10">
-				<?php the_title() ?>
-			</h1>
+
+			<!-- board -->
+			<?php echo get_template_part('template-parts/home/content', 'board'); ?>
+			<!-- end board -->
+
+			<!-- ministries -->
+			<?php echo get_template_part('template-parts/home/content', 'ministries'); ?>
+			<!-- end ministries -->
+
+			<!-- calendar -->
+			<?php echo get_template_part('template-parts/home/content', 'calendar'); ?>
+			<!-- end calendar -->
+
+			<!-- informative -->
+			<?php echo get_template_part('template-parts/home/content', 'informative'); ?>
+			<!-- end informative -->
 		<?php endwhile; ?>
 
 	</main><!-- #main -->

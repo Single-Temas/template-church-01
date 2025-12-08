@@ -38,6 +38,10 @@
             background-color: var(--color-primary);
         }
 
+        .bg-color-primary-hover:hover {
+            background-color: var(--color-primary);
+        }
+
         .fill-color-primary-hover:hover {
             fill: var(--color-primary);
         }
